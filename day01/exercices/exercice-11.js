@@ -19,9 +19,10 @@
 // 2. Écris ta solution sous cette ligne.
 let panier = 350;
 if(panier > 500){
-    console.log("Coût final: "+ panier * 1.10 + " Livraison: Gratuite")
+    let panierfinale = panier - (panier*0.10)
+    console.log("Coût final: "+ panierfinale + ",Livraison: Gratuite")
 }else if(panier > 200){
-    console.log("Coût final: "+ panier +" MAD," + " Livraison: Gratuite")
+    console.log("Coût final: "+ panier +" MAD," + "Livraison: Gratuite")
 }else{
     console.log("Coût final :" + panier)
 }
