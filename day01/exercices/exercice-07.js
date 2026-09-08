@@ -17,4 +17,7 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let departSolde = 1000 ;
+departSolde -= 200;
+departSolde *= 1.05;
+console.log(departSolde);

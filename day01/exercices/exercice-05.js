@@ -17,4 +17,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let number = 15 ;
+if(number % 2 === 0 ){
+    console.log("Pair")
+}else{
+    console.log("Impair")
+}
