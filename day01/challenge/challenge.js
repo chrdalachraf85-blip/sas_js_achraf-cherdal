@@ -13,7 +13,7 @@
  * 3. S'il est éligible, affichez "Prêt accordé. Mensualité : [X] MAD".
  * 4. S'il n'est pas éligible, mais que son revenu est supérieur à 10000 MAD, proposez d'augmenter la durée. Sinon, affichez "Prêt refusé".
  *
- * Exemple de test : montant 100 000, 24 mois (mensualité: 4166.66). 30% de 8000 = 2400. Donc le prêt est refusé, et comme le revenu n'est pas > 10000, "Prêt refusé".
+ * Exemple de test : montant 100 000, 24 mois (mensualité: 4166.66). 30% de 8A000 = 2400. Donc le prêt est refusé, et comme le revenu n'est pas > 10000, "Prêt refusé".
  *
  * 📖 Consigne détaillée : ./README.md
  * ▶️ Commande : node day01/challenge/challenge.js
@@ -21,4 +21,14 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let montantEmprunte = 100000 ;
+let dureeEnMois = 24 ;
+let revenuMensuel = 8000 ;
+let menusualite = (montantEmprunte / dureeEnMois) ;
+if(menusualite <= revenuMensuel * 0.30){
+    console.log("Prêt accordé. Mensualité :"+ menusualite+" MAD")
+}else if(revenuMensuel > 10000){
+    console.log('Augmentez la durée du prêt')
+}else{
+    console.log("Prêt refusé");
+}
