@@ -15,4 +15,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let age = 42 ;
+let school = "YouCode";
+let adult = true;
+let axhraf = 12 ; 
+console.log(typeof(age))
+console.log(typeof(school))
+console.log(typeof(adult))
+console.log(typeof(undefined))
+console.log(typeof(null))

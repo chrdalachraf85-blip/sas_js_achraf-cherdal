@@ -17,4 +17,7 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-console.log("test")
+const PI = 3.14 ;
+let radius = 5;
+let périmètre = 2 * PI *radius ;
+console.log(périmètre)
