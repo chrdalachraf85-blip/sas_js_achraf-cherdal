@@ -17,4 +17,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let a = 3;
+let b = 4;
+let c = 5;
+if((a + b)> c && (b + c)> a&& (a + c)> b){
+    console.log("Triangle valide")
+}else{
+    console.log("Triangle invalid")
+}

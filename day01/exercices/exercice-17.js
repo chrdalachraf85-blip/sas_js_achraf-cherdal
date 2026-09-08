@@ -17,4 +17,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let player1 = "Rock";
+let player2 = "Scissors";
+
+if (player1 === player2) {
+    console.log("Draw!");
+} else if (
+    (player1 === "Rock" && player2 === "Scissors") ||
+    (player1 === "Paper" && player2 === "Rock") ||
+    (player1 === "Scissors" && player2 === "Paper")
+) {
+    console.log("Joueur 1 gagne !");
+} else {
+    console.log("Joueur 2 gagne !");
+}
