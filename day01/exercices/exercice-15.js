@@ -17,4 +17,8 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let prix_extrait = "349.99 MAD"
+prix_extrait = prix_extrait.slice(0,7)
+prix_extrait = Number(prix_extrait)
+prix_extrait *= 2
+console.log(prix_extrait)
