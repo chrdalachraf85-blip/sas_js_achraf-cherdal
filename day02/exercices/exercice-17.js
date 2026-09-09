@@ -5,7 +5,7 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Imaginez que vous "scrappez" des pages web numérotées. Vous avez un totalItems = 45, et chaque page affiche 10 éléments. Écrivez une boucle while qui affiche : "Scraping page 1 (10 items)", "Scraping page 2 (10 items)", jusqu'à la dernière page ("Scraping page 5 (5 items)").
+ * Imaginez que vous "scrappez" des pages web numérotées. Vous avez un totalItems = 45, et chaque page affiche 10 éléments. Écrivez une boucle while qui affiche : "Scraping page 1 (10 items)", "Scraping page 2 (10 items)", jusqu'à la dernière page ("Scraping page 5 (5 it ems)").
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-17
  * ▶️ Commande : node day02/exercices/exercice-17.js
@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let totalitems = 45 ;
+let item_per_page = 10;
+let page = 1 ;
+while(totalitems > 0){
+    if(totalitems >= 10){
+    }
+    else{
+        item_per_page = totalitems;
+    }
+    
+    console.log(`Scraping page ${page} (${item_per_page} items)`)
+    page++
+    totalitems -= 10 ;
+}

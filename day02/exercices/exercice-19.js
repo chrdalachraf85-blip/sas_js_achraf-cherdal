@@ -15,4 +15,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let grille = "";
+for(let i = 1; i <= 8; i++){
+    for(let j = 1;j <= 8 ;j++){
+        if((i + j) % 2 === 0){
+            grille = grille + " "
+        }else{
+            grille = grille + "#"
+        }
+    }
+    grille+= '\n'
+}
+console.log(grille)

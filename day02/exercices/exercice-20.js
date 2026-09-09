@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+for(let i = 100 ; i < 999; i++){
+    let digits = i.toString().split("");
+    let sum = 0;
+
+     digits.forEach(function(digit) {
+        let number = Number(digit);
+        sum += number * number * number 
+    });
+    if(i === sum){
+        console.log(i)
+    }
+}

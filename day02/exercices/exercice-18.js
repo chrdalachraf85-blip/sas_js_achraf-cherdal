@@ -17,4 +17,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let n = 15 ; 
+let steps = 0;
+while(n !== 1 ){
+    if(n % 2 === 0){
+        n /=2
+    }else if(n % 2 !== 0){
+        n = n * 3 + 1
+    }
+    steps++
+}
+console.log(`steps :${steps} result : ${n}`)
