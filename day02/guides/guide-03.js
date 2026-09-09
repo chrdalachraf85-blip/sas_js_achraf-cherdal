@@ -8,5 +8,7 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
-
-// TODO: écris ta solution ici.
+let star = "***";
+for(let i = 0;i <3;i++){
+    console.log(star);
+}

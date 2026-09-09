@@ -8,5 +8,13 @@
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
 'use strict';
+let n = 100;
+let divisioncount = 0;
+while(n > 1){
+    n/= 2;
+    
+    divisioncount++
+}
+console.log(`counter : ${divisioncount}`)
 
-// TODO: écris ta solution ici.
+console.log(`N : ${n}`)
