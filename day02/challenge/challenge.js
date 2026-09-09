@@ -21,4 +21,20 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let codeSecret= 739;
+let tesedcode = 0 ;
+let count = 0;
+let solved = false ;
+for(let i = 0; i <= 9 && !solved;i++){
+    for(let j = 0; j <= 9 && !solved;j++){
+        for(let k = 0; k <= 9&& !solved;k++){
+            tesedcode = i * 100 + j*10 + k;
+            count++
+
+            if(tesedcode===codeSecret){
+                solved = true;
+            }
+        }
+    }
+}
+console.log(`Code found: ${tesedcode} after ${count} attempts`)
