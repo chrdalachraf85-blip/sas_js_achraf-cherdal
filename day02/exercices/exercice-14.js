@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let i = 1;
+let carre = i * i ;
+while(carre <= 1000){
+    i++;
+    carre = i * i ;
+}
+console.log(carre)
