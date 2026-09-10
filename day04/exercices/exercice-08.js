@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function jouerFizzBuzz(max){
+    let result = "";
+    if(max % 3 === 0 && max % 5 === 0){
+        result ="FizzBuzz";
+    }else if(max % 3 === 0){
+        result ="Fizz";
+    }else if(max % 5 === 0 ){
+        result ="Buzz";
+    }else{
+        console.log(max)
+    }
+    return result; 
+}
+
+console.log(jouerFizzBuzz(15))
