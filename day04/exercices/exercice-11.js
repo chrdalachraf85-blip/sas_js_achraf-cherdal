@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function calculerFactorielle(n){
+    let sum = 1;
+    while (n >= 1){
+        sum = sum * n ;
+        n--
+    }
+    return sum ;
+}
+console.log(calculerFactorielle(0))

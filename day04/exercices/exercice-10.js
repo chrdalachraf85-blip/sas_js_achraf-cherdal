@@ -15,4 +15,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function estPalindrome(mot){
+    let motpalindrome = "";
+    let PALINDROME = true;
+    for(let i = mot.length - 1 ; i >= 0 ; i--){
+        motpalindrome = motpalindrome + mot[i];
+        if (mot === motpalindrome){
+            PALINDROME = true ;
+        }else{
+            PALINDROME = false;
+        }
+    }
+    return PALINDROME;
+}
+console.log(estPalindrome("achraf"))
+console.log(estPalindrome("radar"))
