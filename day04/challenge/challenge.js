@@ -21,4 +21,28 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let gold = 0 ;
+let swordprice = 100;
+function ajouterOr(montant){
+    gold += montant
+    console.log(`You picked up ${montant} gold. Total: ${gold}`)
+}
+function depenserOr(swordprice){
+    if(gold>=swordprice){
+        gold -= swordprice;
+        console.log("purchace succesfuly ")
+    }else{
+        console.log("Fonds insuffisants")
+    }
+}
+function combatGagne(){
+    let recompense = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+    ajouterOr(recompense);
+        
+
+
+}
+combatGagne();
+combatGagne();
+combatGagne();
+depenserOr(swordprice);
