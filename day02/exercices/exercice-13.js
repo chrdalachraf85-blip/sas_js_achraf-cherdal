@@ -14,8 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
+let a = 0;
+let b = 1;
 let sum = 0;
 for(let i = 0 ; i <= 10  ; i++){
-    sum = sum + i ;
+    console.log(sum)
+
+    sum = a + b ;
+    a = b ;
+    b = sum;
 };
-console.log(sum)
