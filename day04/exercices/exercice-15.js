@@ -15,4 +15,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function fibanocci(n){
+    if(n <= 1) return n ;
+    let pre  = fibanocci(n - 1) 
+    let next = fibanocci(n - 2)
+    return  pre+next 
+
+}
+console.log(fibanocci(10))
