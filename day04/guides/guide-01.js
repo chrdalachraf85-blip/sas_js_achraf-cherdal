@@ -9,4 +9,9 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+function saleur(name){
+    let call = `Hello, ${name}!`;
+    return call;
+}
+let result = saleur("achraf")
+console.log(result)

@@ -9,4 +9,8 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+function infunc(){
+    let name = "achraf";
+}
+console.log(name)
+//the variable appears as undefined
