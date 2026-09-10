@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function creerCompteur(){
+    let count = 0;
+    function childcompteur(){
+        if(creerCompteur()){
+            count++
+            return count;
+        }
+    }
+    return childcompteur;
+}
+let moncompteur = creerCompteur()
+console.log(moncompteur())
+console.log(moncompteur())
+console.log(moncompteur())

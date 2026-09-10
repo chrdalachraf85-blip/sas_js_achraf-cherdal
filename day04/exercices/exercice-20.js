@@ -1,7 +1,7 @@
 /**
  * ─────────────────────────────────────────────────────────────
  * JOUR 03 · EXERCICE 20 · NIVEAU 3 : DÉFI (AVANCÉS)
- * MÉMOÏSATION (CACHE)
+ *   (CACHE)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let cache = {};
+function longcalcul (nombre){
+    if(cache[nombre]!==undefined){
+        console.log("FROM CACHE");
+        return cache[nombre]
+    }
+    console.log("Calculating");
+    let result = nombre*nombre;
+    cache[nombre] = result
+    return result;
+}
+console.log(longcalcul(5));
+console.log(longcalcul(5));
+console.log(longcalcul(10));
