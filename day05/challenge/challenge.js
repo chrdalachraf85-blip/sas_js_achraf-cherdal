@@ -23,4 +23,20 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let bannedwords = ["noob", "idiot", "nul"];
+let text ="Tu es vraiment un GROS NooB et un idiot !!" ;
+
+function filtrerMessage(message){
+    let elemnts = message.split(" ")
+    for(let i =  0 ; i < elemnts.length ; i++){
+        for(let j = 0 ; j <bannedwords.length ; j++){
+            if(elemnts[i].toLocaleLowerCase().includes(bannedwords[j])){
+                elemnts[i] = "*".repeat(elemnts[i].length);
+            }    
+        }
+    }
+    return elemnts.join(" ")
+}
+
+console.log(filtrerMessage(text))
+

@@ -23,7 +23,5 @@ for(let i = 0 ; i < phrase.length ; i++){
 
         newmot = newmot + mo1[0];
 
-
-
 }
 console.log(newmot)
