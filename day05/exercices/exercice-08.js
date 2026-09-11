@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function capitaliser(mot){
+    let newmot = mot.toLocaleLowerCase()
+    newmot = newmot.replace("y","Y")
+    return newmot;
+}
+console.log(capitaliser("yOUcoDe"))

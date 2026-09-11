@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function cleandomaine(email){
+    /*let position = email.indexof("y")
+    let domaine = email.slice(position,email.length - 1)
+    */
+
+    let domaine = email.split("@")
+    return domaine[1];
+}
+console.log(cleandomaine("contact@youcode.ma"))
