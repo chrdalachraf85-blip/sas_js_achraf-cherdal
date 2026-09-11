@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let count = 0;
+function count_e(phrase){
+    for(let i = 0;i < phrase.length; i++){
+        if(phrase[i] === "e" || phrase[i] === "E"){
+            count++
+
+        }
+    }
+    return count;
+}
+//console.log(count_e("Every evening, Elena prepares excellent green tea before she exercises near the peaceful seaside."))

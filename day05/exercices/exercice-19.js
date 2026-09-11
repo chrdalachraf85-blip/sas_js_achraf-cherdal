@@ -1,3 +1,4 @@
+
 /**
  * ─────────────────────────────────────────────────────────────
  * JOUR 05 · EXERCICE 19 · NIVEAU 3 : DÉFI (AVANCÉS)
@@ -14,4 +15,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function verifierPlaque(plaque) {
+    let regex = /^\d{4,5}-[A-Za-z]{1,2}-\d{1,2}$/;
+    if(regex.test(plaque)){
+        return true;
+    }else{
+        return false;
+    }
+}
+//console.log(verifierPlaque("1234-A-56"));
