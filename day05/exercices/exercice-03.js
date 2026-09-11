@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let country = "MAROC";
+let school = "youcode"
+country = country.toLocaleLowerCase()
+school = school.toLocaleUpperCase()
+console.log(country)
+console.log(school)
