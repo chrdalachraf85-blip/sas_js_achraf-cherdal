@@ -9,4 +9,5 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let phrase = "J'apprends le JavaScript à YouCode";
+console.log(phrase.toLocaleLowerCase().includes("javascript"))
