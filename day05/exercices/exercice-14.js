@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function countwords(phrase){
+    let count = 0 ;
+    phrase = phrase.split(" ")
+    for(let i = 0 ; i < phrase.length ; i++){
+        if(phrase[i] !== ""){
+            count++
+        }
+    }
+    return count ;
+}
+console.log(countwords("JavaScript                  helps students build useful projects while learning logic through daily practice"))

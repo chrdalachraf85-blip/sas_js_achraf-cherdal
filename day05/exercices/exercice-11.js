@@ -15,4 +15,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let phrase = "Hyper Text Markup Language";
+phrase = phrase.split(" ")
+let newmot = "";
+for(let i = 0 ; i < phrase.length ; i++){
+    let mo1 = phrase[i];
+
+        newmot = newmot + mo1[0];
+
+
+
+}
+console.log(newmot)
