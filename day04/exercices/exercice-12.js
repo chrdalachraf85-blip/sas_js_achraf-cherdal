@@ -18,7 +18,7 @@ const multiplier =(a,b) => {return a * b}
 
 function executerOperation(a, b, operation){
 
-    let result = multiplier(a,b)
+    let result = operation(a,b)
     return result;
 }
 console.log(executerOperation(5, 3, multiplier))
