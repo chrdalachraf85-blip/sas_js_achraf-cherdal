@@ -14,4 +14,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let favcolors = ["black","white","red","bleu","grey"]
+console.log(favcolors[0])
+console.log(favcolors[2])
