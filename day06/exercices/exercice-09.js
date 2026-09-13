@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function pairsnombres(array){
+    let newarray = [];
+    for(let nombre of array){
+        if(nombre % 2 === 0){
+            newarray.push(nombre)
+        }
+    }
+    return newarray
+}
+//console.log(pairsnombres([1, 2, 3, 4, 5, 6]))
