@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let mots  = ["pomme", "banane", "pomme", "orange", "banane", "pomme"]
+function tableaudemots(array){
+    let count = {}
+    
+    for(let i = 0 ; i < array.length ; i++){
+        if(count[array[i]] === undefined){
+            count[array[i]] = 1;
+        }else{
+            count[array[i]]++
+        }
+    }
+    return count;
+}
+console.log(tableaudemots(mots));
