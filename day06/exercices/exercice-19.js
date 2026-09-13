@@ -14,7 +14,6 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
 let array = [10, 20, 30, 40, 45, 50, 60];
 let search = 45 ; 
 let left = 0;
