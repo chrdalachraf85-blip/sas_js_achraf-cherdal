@@ -9,4 +9,7 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let file = ["Alice", "Bob", "Charlie"];
+file.shift(0,1);
+file.push("David");
+console.log(file);

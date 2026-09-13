@@ -9,4 +9,10 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let notes = [12, 15, 8, 19];
+let somme = 0;
+for(let i = 0;i < notes.length; i++){
+    somme += notes[i] ;
+}
+let result = somme / notes.length
+//console.log(result)

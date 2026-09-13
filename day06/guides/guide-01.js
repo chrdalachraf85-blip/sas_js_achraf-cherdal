@@ -9,4 +9,6 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let fruits = ["Pomme", "Banane", "Orange"];
+fruits[1] = "Mangue";
+console.log(fruits[fruits.length - 1])
