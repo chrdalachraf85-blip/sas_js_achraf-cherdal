@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let doublons = [1, 2, 2, 3, 4, 4, 5]
+function nodoublons(array){
+    let newarray = [];
+    for(let i = 0; i < array.length ; i++){
+        if(newarray.includes(array[i]) === false){
+            newarray.push(array[i])
+        }
+    }
+    return newarray;
+}
+
+console.log(nodoublons(doublons))

@@ -13,5 +13,29 @@
 'use strict';
 
 // 1. Identifie les données nécessaires.
-// 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let tab1 = [1, 3, 5];
+let tab2 = [2, 4, 6];
+let merge = [];
+let i = 0;
+let j = 0;
+while(i < tab1.length && j < tab2.length){
+    if(tab1[i] < tab2[j]){
+        merge.push(tab1[i])
+        i++
+    }else if(tab1[i] > tab2[j]){
+        merge.push(tab2[j])
+        j++
+    } 
+}
+while (i < tab1.length) {
+    merge.push(tab1[i])
+    i++
+}
+while (j < tab2.length) {
+    merge.push(tab2[j])
+    j++
+}
+console.log(merge)
+
+
+
