@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let couleurs  = ["Rouge", "Vert", "Bleu"];
+let newcolors = [];
+couleurs.forEach(function(couleurs1){
+    couleurs.forEach(function(couleurs2){
+        if(couleurs1 !== couleurs2){
+            
+            newcolors.push( couleurs1 +"-" + couleurs2)
+        }
+
+    })
+    
+    
+})
+console.log(newcolors)
