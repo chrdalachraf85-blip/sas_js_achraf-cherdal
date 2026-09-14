@@ -19,4 +19,34 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let panier = [101, 105, 101, 102];
+let cache = {}
+let input = 101;
+function ajouterAuPanier(id){
+    panier.push(id)
+    return panier;
+}
+function retirerDuPanier(id){
+
+    let index = panier.indexOf(id);
+
+    while (index !== -1) {
+        panier.splice(index, 1);
+        index = panier.indexOf(id);
+    }
+
+    return panier
+}
+function afficherQuantites(id){
+    for(let i = 0 ; i < panier.length ; i++){
+        if(cache[panier[i]] === undefined ){
+            cache[panier[i]] = 1
+        }else{
+            cache[panier[i]]++
+        }
+    }
+    return cache; 
+}
+console.log(ajouterAuPanier(input))
+console.log(retirerDuPanier(input))
+console.log(afficherQuantites(input))
