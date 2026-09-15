@@ -9,4 +9,10 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+/*let voiture = {
+    marque : "toyota",
+    modele : "corola",
+    annee : 2020,
+}*/
+let cleRecherche = "modele" 
+console.log(voiture[cleRecherche])

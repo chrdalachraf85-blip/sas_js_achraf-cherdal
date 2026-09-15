@@ -9,4 +9,11 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let voiture = {
+    marque : "toyota",
+    modele : "corola",
+    annee : 2020,
+}
+for(let key in voiture){
+    console.log(key + " : " + voiture[key])
+}
