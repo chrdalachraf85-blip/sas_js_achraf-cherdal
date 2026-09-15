@@ -14,4 +14,5 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let array = [{titre : "spiderman" ,auteur : "joesiph",}, { titre : "batman" , autheur : "clavin"} ,{titre : "batman" , autheur : "axch"}];
+console.log(array[1].titre)

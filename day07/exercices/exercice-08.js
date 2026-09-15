@@ -14,4 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let players = {
+    player1 : 200,
+    player2 : 250,
+    player3 : 800,
+    player4 : 300,
+}
+let winner = ""
+let nombre1 = 0 ;
+for(let keys in players){
+    if(players[keys] > nombre1){
+        nombre1 = players[keys]
+        winner = keys
+    }
+    
+}
+console.log(winner)

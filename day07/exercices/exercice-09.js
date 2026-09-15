@@ -14,4 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let players = {
+    score1 : 2,
+    score2 : 25,
+    score3 : 80,
+    score4 : 3,
+}
+function newarray(obj){
+    let array = [];
+    for(let key in obj){
+        if(obj[key] > 10){
+            array.push(key)
+        }
+    }
+    return array
+}
+console.log(newarray(players))

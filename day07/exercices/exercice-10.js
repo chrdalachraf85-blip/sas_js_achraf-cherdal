@@ -14,4 +14,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let word = "abracadabra"
+function counter(str){
+    let cache = {}
+    for(let i = 0; i < str.length ; i++){
+        if(cache[str[i]] === undefined){
+            cache[str[i]] = 1
+        }else{
+            cache[str[i]]++
+        }
+    }
+    return cache
+} 
+console.log(counter(word))
