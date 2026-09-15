@@ -20,4 +20,60 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+
+let array = [];
+function ajouterUtilisateur(nom, email){
+    
+    let id = "";
+    for(let i = 0 ; i < 4 ;i++){
+if(Math.random() < 0.5){
+        id += Math.floor(Math.random() * 10);
+    }else{
+        id += String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+    }
+
+    }
+    let objet = {
+        identification : id ,
+        name : nom ,
+        gmail : email,
+    }
+    array.push(objet)
+    return objet;
+}
+function trouverParEmail(email){
+    for(let user of array ){
+        if(user.gmail === email){
+            return user 
+        }
+     
+    }
+    return undefined
+} 
+function supprimerParId(id){
+    let index ;
+    for(let target of array){
+        if(target.identification === id){
+
+            index = array.indexOf(target)
+            array.splice(index,1)
+            return target
+        }
+    }
+    return undefined
+}
+function afficherAnnuaire(){
+    for(let users of array){
+        console.log(`ID: ${users.identification} | Name: ${users.name} | Email: ${users.gmail}`)
+    }
+
+
+}
+
+let user1 = ajouterUtilisateur("achraf","chrdalacharf@email.com")
+let user2 = ajouterUtilisateur("oussama","oussama1@email.com")
+console.log(trouverParEmail("oussama1@email.com"))
+afficherAnnuaire()
+supprimerParId(user2.identification)
+afficherAnnuaire()
