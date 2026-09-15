@@ -14,4 +14,21 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let objet1 = {
+    name : "achraf",
+    objet2 :{
+        age : 18,
+        city : "nador",
+
+    }
+}
+let copy = {...objet1} 
+copy.objet2.age = 17
+console.log(copy.objet2.age)
+console.log(objet1.objet2.age)
+//the inner objet dont change if the outer objet does and keep connection with the copy so they always have the same value 
+let copy2 = structuredClone(objet1)
+copy2.objet2.age = 12
+console.log(copy2.objet2.age)
+console.log(objet1.objet2.age)
+//with the modren solution the copy has its own identite u can change it without touching the originegit

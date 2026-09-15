@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let prix = [{ article: "PC", prix: "1500$" }, { article: "Souris", prix: "25$" }]
+function realnumbers(array){
+    array[0].prix= array[0]["prix"].replaceAll("$","")
+    array[1].prix= array[1]["prix"].replaceAll("$","")
+    array[1].prix =Number(array[1].prix)
+    array[0].prix = Number(array[0].prix)
+    return array
+}
+console.log(realnumbers(prix))
