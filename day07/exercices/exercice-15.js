@@ -16,4 +16,8 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let json = '{"id":1, "titre":"Apprendre le JS", "vu":false}'
+let newjason = JSON.parse(json)
+newjason.vu = true
+json = JSON.stringify(newjason)
+console.log(json)
